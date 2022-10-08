@@ -1,0 +1,247 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --login-bg: #fff;
+    --titulo-bg: #cd3534;
+    --boton-bg: #cd3534;
+    --color-palabras: #f16357;
+    --color-imagen:#f7ddce;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, #fff1ea 0%, #fff1ea 100%);
+}
+
+.titulo{
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--titulo-bg);
+}
+
+.heading{
+    width: 80%;
+}
+
+.logo{
+    width: 100px;
+}
+.heading h1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--boton-bg);
+}
+.container{
+    height: 43.75em;
+    width: 60em;
+    margin: 6em auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: var(--login-bg);
+}
+
+.image{
+    width: 50%;
+    background-color: var(--color-imagen);
+    box-sizing: border-box;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrap2{
+    width: 80%;
+    position: relative;
+    border-bottom: 2px solid #b2b2b2;
+    margin-bottom: 13px;
+}
+.wrap{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+.f1{
+    border-bottom:2px solid #b2b2b2 ;
+    width: 40%;
+    position: relative;
+}
+
+/* lineas de cada input */
+.f2{
+    border-bottom:2px solid #b2b2b2 ;
+    margin-left: auto;
+    width: 50%;
+    position: relative;
+}
+label{
+    font-size: 12px;
+    color: var(--color-palabras);
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    min-height: 25px;
+    border-bottom: none;
+    padding: 15px 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+}
+input{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    color: rgb(98, 98, 98);
+    font-weight: 500;
+    padding: 10px 0px;
+    border: none;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input:hover{
+    border: 2px solid var(--color-palabras);
+}
+
+
+
+/************BUTTON*****************/
+.btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    background: var(--titulo-bg);
+    color: #fff;
+    box-shadow: 8px 10px 30px rgba(0, 0, 0, 0.329);
+    transition: 0.4s;
+}
+.btn:hover{
+    background:  rgb(255, 0, 0);
+    color: #fff;
+    cursor: pointer;
+}
+/*************INPUT ANIMATION-SPAN********************/
+
+.focus-input{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* deslizador */
+.focus-input::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.6s;
+    background: var(--titulo-bg)
+}
+input:focus + .focus-input::before{
+    width: 100%;
+}
+.has-val.input + .focus-input::before{
+    width: 100%;
+}
+.focus-input2{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* deslizador */
+.focus-input2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.6s;
+    background: var(--titulo-bg);
+}
+
+input:focus + .focus-input2::before{
+    width: 100%;
+}
+.has-val.input + .focus-input2::before{
+    width: 100%;
+}
+input[type="text"]{
+    overflow: hidden;
+}
+/********************RESPONSIVE***************/
+
+@media(max-width:1250px){
+    .container{
+        width: 90%;
+    }
+}
+@media(max-width:768px){
+    .container{
+        width: 100%;
+        height: 100vh !important;
+        position: static;
+        transform: translate(0,0);
+    }
+}
+@media(max-width:1000px){
+    .image{
+        display: none;
+    }
+    .container{
+        height: 95vh;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .wrap{
+        flex-direction: column;
+    }
+    .f1,.f2{
+        width: 100%;
+        margin: 0px;
+    }
+}
