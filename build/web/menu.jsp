@@ -19,6 +19,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
             />
+        <link rel="stylesheet" href="./CSS/tarjetas.css" />
         <%
             response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             response.setHeader("Pragma", "no-cache");
@@ -31,6 +32,7 @@
         <title>Menu</title>
     </head>
     <body>
+        <!-- Rama Mod -->
         <nav class="sbarra salir">
             <header>
                 <div class="imagen-t">
@@ -61,7 +63,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="http://localhost:8080/ProyectoUsuarios/registro.jsp">
+                            <a href="#">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
@@ -92,7 +94,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- Cerrar Sesion - Modo Obscuro -->
                 <div class="boton-s">
                     <li class="nav-link">
@@ -115,14 +117,35 @@
                 </div>
             </div>
         </nav>
-                        
+
         <section class="inicio">
-            <div class="texto">INICIO</div>
-            <h1>Guatemala</h1>
+            <!-- <div class="texto">INICIO</div> -->
+
+            <!-- CARDS -->
+            <div class="body2">
+                <div class="tarjeta" style="--imagen-card: url(..//imagenes/prueba4.jpeg)">
+                    <div class="info-tarjeta">
+                        <h2>Registrar</h2>
+                        <a href="#">Ir a registrar</a>
+                    </div>
+                </div>
+                <div class="tarjeta" style="--imagen-card: url(..//imagenes/prueba2.jpeg)">
+                    <div class="info-tarjeta">
+                        <h2>En cola</h2>
+                        <a href="#">Ver lista</a>
+                    </div>
+                </div>
+                <div class="tarjeta" style="--imagen-card: url(..//imagenes/prueba3.jpeg)">
+                    <div class="info-tarjeta">
+                        <h2>Inscripcion</h2>
+                        <a href="#">Ir a Inscribir</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script src="./js/barra.js"></script>
-        
-        <!-- Rama Mod -->
+
+
     </body>
 </html>
