@@ -294,10 +294,3 @@ body.noche .modo::before{
     width: calc(100% - 88px);
 }
 
-
-.cerrar{
-    border: none;
-    background: none;
-    cursor: pointer;
-    
-}
