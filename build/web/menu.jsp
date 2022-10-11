@@ -122,5 +122,7 @@
         </section>
 
         <script src="./js/barra.js"></script>
+        
+        <!-- Rama Mod -->
     </body>
 </html>
