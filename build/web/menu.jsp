@@ -14,7 +14,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <link rel="stylesheet" href="./CSS/menu.css" />
-        <!-- icons -- boxicon -->
+        <!-- Icons Boxicon -->
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
@@ -61,7 +61,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="http://localhost:8080/ProyectoUsuarios/registro.jsp">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
@@ -92,7 +92,7 @@
                         </li>
                     </ul>
                 </div>
-
+                
                 <!-- Cerrar Sesion - Modo Obscuro -->
                 <div class="boton-s">
                     <li class="nav-link">
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </nav>
-
+                        
         <section class="inicio">
             <div class="texto">INICIO</div>
             <h1>Guatemala</h1>
