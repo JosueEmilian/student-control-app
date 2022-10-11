@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom properties - Color Normal*/
+:root{
+    --fondo-general: #f3f3f3;
+    --sliderBarra: #fff;
+    --colorTexto: #f16357;
+    --color-iconos: #fd4242;
+    --color-barra:  #f3f3f3;
+    --colorclick: #ca3838;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+    background: var(--fondo-general);
+    /* background-image: url(../imagenes/Background.png); */
+    transition: var(--tran-05)
+}
+
+/* Colores Modo Obscuro */
+body.noche{
+    --fondo-general: #292d3e;
+    --sliderBarra: #212533;
+    --colorTexto: #CCC;
+    --color-iconos: #fff;
+    --color-barra:  #2d3142;
+    --colorclick: #b9b9b9;
+}
+
+/* BARRA */
+.sbarra{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sliderBarra);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.sbarra.salir{
+    width: 88px;
+}
+
+/*  */
+.sbarra .texto{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorTexto);
+    transition: var(--tran-04);
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sbarra.salir .texto{
+    opacity: 0;
+}
+
+.sbarra .imagen{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sbarra li{
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sbarra li .iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 25px;
+}
+
+.sbarra li .iconos,
+.sbarra li .text{
+    color: var(--color-iconos);
+    transition: var(--tran-02);
+}
+
+.sbarra header{
+    position: relative;
+}
+
+.sbarra .imagen-t img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sbarra header .imagen-t{
+    display: flex;
+    align-items: center;
+}
+
+
+header .imagen-t .header-t{
+    display: flex;
+    flex-direction: column;
+}
+
+.heder-t .nombre{
+    font-weight: 600; 
+}
+
+.header-t .administrador{
+    margin-top: -2px;
+}
+
+.sbarra header .arrow1{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background: var(--color-iconos);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sliderBarra);
+    font-size: 22px;
+    transition: var(--tran-03);
+}
+
+.sbarra.salir header .arrow1{
+    transform: translateY(-50%);
+}
+
+body.noche .sbarra header .arrow1{
+    color: var(--colorTexto);
+}
+
+.sbarra .menu{
+    margin-top: 35px;
+}
+
+/* barra buscar */
+.sbarra .buscar{
+    background: var(--color-barra);
+    border-radius: 6px;
+    transition: var(--tran-05);
+}
+
+.buscar input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--color-barra);
+    transition: var(--tran-05);
+}
+
+.sbarra li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+
+.sbarra li a:hover{
+    background: var(--colorclick);
+}
+
+.sbarra li a:hover .iconos,
+.sbarra li a:hover .texto{
+    color: var(--sliderBarra)
+}
+
+
+
+.sbarra .menu-bar{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-bar .modo-obscuro{
+    position: relative;
+    border-radius: 6px;
+    background: var(--color-barra);
+}
+
+.menu-bar .modo-obscuro .aspecto{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar .modo-obscuro i{
+    position: absolute;
+    transition: var(--tran-03);
+}
+
+.menu-bar .modo-obscuro i.claro{
+    opacity: 0;
+}
+
+body.noche .menu-bar .modo-obscuro i.claro{
+    opacity: 1;
+}
+
+body.noche .menu-bar .modo-obscuro i.obscuro{
+    opacity: 0;
+}
+
+.menu-bar .modo-obscuro .boton-modo{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: var(--tran-05);
+    /* color del boton oscuro */
+    /* background: var(--colorclick); */
+}
+
+.boton-modo .modo{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--color-iconos)
+}
+
+.modo::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sliderBarra);
+    transition: var(--tran-03);
+}
+
+body.noche .modo::before{
+    left: 24px;
+}
+
+.inicio{
+    position: relative;
+    height: 100vh;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: var(--fondo-general);
+    transition: var(--tran-05);
+}
+
+.inicio .texto{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--colorTexto);
+    padding: 8px 40px;
+
+}
+.sbarra.salir ~ .inicio{
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+
+.cerrar{
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}

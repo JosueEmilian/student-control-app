@@ -1,5 +1,5 @@
 /* IMPORT FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
 :root {
     --login-bg: #fff;
@@ -12,14 +12,16 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to top, #fff1ea 0%, #fff1ea 100%);
+    background-image: url(../imagenes/Background.png);
+   /*  background-image: linear-gradient(to top, #fff1ea 0%, #fff1ea 100%); */
 }
 
 .titulo{
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 2.25rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -79,13 +81,14 @@ body{
     width: 80%;
     justify-content: center;
 }
+
+/* lineas de cada input */
 .f1{
     border-bottom:2px solid #b2b2b2 ;
     width: 40%;
     position: relative;
 }
 
-/* lineas de cada input */
 .f2{
     border-bottom:2px solid #b2b2b2 ;
     margin-left: auto;
@@ -127,8 +130,6 @@ input:hover{
 }
 
 
-
-/************BUTTON*****************/
 .btn{
     margin-top: 20px;
     width: 200px;
@@ -148,7 +149,9 @@ input:hover{
     color: #fff;
     cursor: pointer;
 }
-/*************INPUT ANIMATION-SPAN********************/
+
+
+/*animacion*/
 
 .focus-input{
     position: absolute;
@@ -210,7 +213,8 @@ input:focus + .focus-input2::before{
 input[type="text"]{
     overflow: hidden;
 }
-/********************RESPONSIVE***************/
+
+/*Responsive*/
 
 @media(max-width:1250px){
     .container{

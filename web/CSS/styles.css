@@ -12,7 +12,9 @@
 body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to top, #fff1ea 0%, #fff1ea 100%);
+
+    /* imagen de fondo */
+    background-image: url(../imagenes/Background.png);
 }
 
 .login-container{
@@ -50,7 +52,7 @@ body{
 }
 
 .textos{
-    color: var(--color-palabras);
+    color: var(--color-palabras)
 }
 
 .google-login{

@@ -1,6 +1,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,14 +12,13 @@
     <body>
 
         <form action="nuevousuario" method="post" id="formregistro">
-
             <div class="container">
                 <div class="form">
                     <div class="heading">
                         <img src="./imagenes/logo.png" class="logo" />
-                        <h1 class="titulo">REGISTRO DE USUARIOS</h1>
+                        <h1 class="titulo">registro de usuarios</h1>
                     </div>
-                    <!--Form-->
+                   <form action="nuevousuario" method="post" id="formregistro">
                     <div class="wrap">
                         <div class="f1">
                             <label>NOMBRE</label>

@@ -8,9 +8,9 @@
         <link rel="stylesheet" href="./CSS/styles.css" />
         <script src="js/main.js"></script>
         <title>Login Users</title>
-        
+
         <%
-            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); 
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             response.setHeader("Pragma", "no-cache");
             response.setDateHeader("Expires", 0);
         %>
@@ -18,7 +18,7 @@
     <body>
         <div class="login-container">
             <div class="login-info-container">
-                <h1 class="titulo">INICIO DE SESION</h1>
+                <h1 class="titulo">Inicio de Sesion</h1>
                 <div class="google-login">
                     <div class="bloque-google">
                         <img src="./imagenes/Google.svg" alt="Google" />
@@ -30,6 +30,7 @@
                     </div>
                 </div>
                 <p>Inicia</p>
+
                 <form action="iniciar" method="post" class="input-container" id="forminicio">
                     <input class="input" type="text" placeholder="Usuario" name="usuario" id="usuario" />
                     <input class="input" type="password" placeholder="Password" name="clave" id="clave" />
