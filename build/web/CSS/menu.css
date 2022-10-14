@@ -22,6 +22,11 @@
     --tran-05: all 0.5s ease;
 }
 
+html{
+    /* scroll-behavior: smooth -No compatible- */
+    /* jQuary para efecto scrool smoth */
+}
+
 body{
     height: 100vh;
     background: var(--fondo-general);
@@ -94,7 +99,7 @@ body.noche{
 }
 
 .sbarra li .iconos,
-.sbarra li .text{
+.sbarra li .texto{
     color: var(--color-iconos);
     transition: var(--tran-02);
 }

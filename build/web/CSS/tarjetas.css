@@ -32,6 +32,10 @@
 
 }
 
+h2{
+    font-size: 30px;
+}
+
 .info-tarjeta h2, a{
     color: rgba(255, 255, 255, .8);
     margin: 10px 0;
