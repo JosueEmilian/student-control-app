@@ -18,7 +18,6 @@
                         <img src="./imagenes/logo.png" class="logo" />
                         <h1 class="titulo">registro de usuarios</h1>
                     </div>
-                   <form action="nuevousuario" method="post" id="formregistro">
                     <div class="wrap">
                         <div class="f1">
                             <label>NOMBRE</label>
@@ -46,7 +45,7 @@
                         <input type="password" name="clave" id="clave"/>
                         <span class="focus-input2"></span>
                     </div>
-                     <button class="btn" id="btnregistrar">Registrar</button>
+                    <button class="btn" id="btnregistrar">Registrar</button>
                 </div>
                 <!--Image-->
                 <div class="image">
