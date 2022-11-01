@@ -7,14 +7,41 @@
         <title>Cola Estudiantes</title>
     </head>
     <body>
-        <form action="Mostrar">
-            <input type="submit" value="Mostrar">
+        <h1>Consulta de Usuarios*</h1>
+        <form action="ConsultaEstudiantesCola" method="post">
+            <input type="submit" name="consulta" value="Consultar">
         </form>
-        
-        
-        <h1>Ultimo Estudiante Registrado</h1>
-        <c:forEach items="${datos}" var="dato">
-            $(dato.Nombre)} ${dato.Apellido}
-        </c:forEach>
+
+        <div>
+            <table>
+                <thead>
+                    <<tr>
+                        <th>Carnet</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>FechaNacimiento</th>
+                        <th>Correo</th>
+                        <th>Celular</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <c:forEach var="dato" items="${Lista}">
+                        <<tr>
+                            <td>${dato.getCarnet()}</td>
+                            <td>${dato.getNombre()}</td>
+                            <td>${dato.getApellido()}</td>
+                            <td>${dato.getFechaNacimiento()}</td>
+                            <td>${dato.getCorreo()}</td>
+                            <td>${dato.getCelular()}</td>
+
+                            <!-- EDITAR -->
+                            <td><a href="ConsultaEstudiantesCola?Carnet=${datos.getCarnet()}">Editar</a></td>
+                            <td><a href="EliminaUsuario?codigo=${datos.getCodigo()}">Eliminar</a></td>
+                            
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
