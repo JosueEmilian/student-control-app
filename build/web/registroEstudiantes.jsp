@@ -18,8 +18,7 @@
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
-            />
-        <link rel="stylesheet" href="./CSS/tarjetas.css" />
+            />       
         <%
             response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             response.setHeader("Pragma", "no-cache");
@@ -32,7 +31,6 @@
         <title>Menu</title>
     </head>
     <body>
-        <!-- Rama Mod -->
         <nav class="sbarra salir">
             <header>
                 <div class="imagen-t">
@@ -57,13 +55,13 @@
                     </li>
                     <ul class="links">
                         <li class="nav-link">
-                            <a href="#inicio" class="selected">
+                            <a href="menu.jsp">
                                 <i class="bx bx-home iconos"></i>
                                 <span class="texto nav-texto">INICIO</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="registroEstudiantes.jsp" class="">
+                            <a href="registroEstudiantes.jsp" class="selected">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
@@ -118,57 +116,77 @@
             </div>
         </nav>
 
-        <section class="inicio" id="inicio">
-            <!-- CARDS -->
-            <div class="body2">
-                <div class="tarjeta" style="--imagen-card: url(..//imagenes/registrar.png)">
-                    <div class="info-tarjeta">
-                        <h2>Registrar</h2>
-                        <a href="registroEstudiantes.jsp">Ir a registrar</a>
-                    </div>
-                </div>
-                <div class="tarjeta" style="--imagen-card: url(..//imagenes/cola.png)">
-                    <div class="info-tarjeta">
-                        <h2>En cola</h2>
-                        <a href="#">Ver lista</a>
-                    </div>
-                </div>
-                <div class="tarjeta" style="--imagen-card: url(..//imagenes/inscripcion.png)">
-                    <div class="info-tarjeta">
-                        <h2>Inscripcion</h2>
-                        <a href="#">Ir a Inscribir</a>
-                    </div>
+        <!-- SECTION OF REGISTER STUDENTS -->
+        <section class="inicio" id="registroEstudiantes">
+            <div class="body-Alu">
+                <div class="container">
+                    <form action="" method="post">
+                        <h2 class="tittle-Alu">Registro de Alumnos</h2>
+                        <div class="contenido-Alu">
+                            <div class="input-Alu">
+                                <label for="">Nombres</label>
+                                <input
+                                    type="text"
+                                    placeholder="Escriba los nombre"
+                                    name="Nombre"
+                                    required=""
+                                    />
+                            </div>
+                            <div class="input-Alu">
+                                <label for="">Apellidos</label>
+                                <input
+                                    type="text"
+                                    placeholder="Escriba los apellidos"
+                                    name="Nombre"
+                                    required=""
+                                    />
+                            </div>
+                            <div class="input-Alu">
+                                <label for="">Carnet</label>
+                                <input
+                                    type="text"
+                                    placeholder="Escriba el No.Carnet "
+                                    name="Nombre"
+                                    required=""
+                                    />
+                            </div>
+                            <div class="input-Alu">
+                                <label for="">Fecha de Nacimiento</label>
+                                <input
+                                    type="date"
+                                    placeholder="Indique la fecha de Nacimiento"
+                                    name="Nombre"
+                                    required=""
+                                    />
+                            </div>
+                            <div class="input-Alu">
+                                <label for="">Correo Electronico</label>
+                                <input type="text" placeholder="@mail" name="Nombre" required="" />
+                            </div>
+                            <div class="input-Alu">
+                                <label for="">Celular</label>
+                                <input
+                                    type="text"
+                                    placeholder="Escriba el No.Celular"
+                                    name="Nombre"
+                                    required=""
+                                    />
+                            </div>
+                            <div class="anuncio">
+                                <p>
+                                    Registro de estudiantes para el ciclo 2023 del colegio
+                                    "proyectofinal" por favor lea bien los datos antes de ingresarlos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button type="submit">Registrar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
-        <section class="inicio">
-            <h1>Seccion Extra para datos random</h1>
-        </section>
 
         <script src="./js/barra.js"></script>
-
-
-        <!-- Utilizando JQuary para efecto scroll smoth -->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("a").on('click', function (event) {
-
-                    if (this.hash !== "") {
-                        event.preventDefault();
-
-                        var hash = this.hash;
-
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 500, function () {
-
-                            window.location.hash = hash;
-                        });
-                    }
-                });
-            });
-        </script>
     </body>
 </html>

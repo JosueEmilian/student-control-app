@@ -19,30 +19,30 @@
                         <h1 class="titulo">registro de usuarios</h1>
                     </div>
                     <div class="wrap">
-                        <div class="f1">
+                        <div class="f1 inputs">
                             <label>NOMBRE</label>
-                            <input type="text" name="nombre" id="nombre"/>
+                            <input type="text" name="nombre" id="nombre" required=""/>
                             <span class="focus-input"></span>
                         </div>
-                        <div class="f2">
+                        <div class="f2 inputs">
                             <label>APELLIDO</label>
-                            <input type="text" name="apellido" id="apellido"/>
+                            <input type="text" name="apellido" id="apellido" required=""/>
                             <span class="focus-input"></span>
                         </div>
                     </div>
-                    <div class="wrap2">
+                    <div class="wrap2 inputs">
                         <label>USUARIO</label>
-                        <input type="text" name="usuario" id="usuario"/>
+                        <input type="text" name="usuario" id="usuario" required=""/>
                         <span class="focus-input2"></span>
                     </div>
-                    <div class="wrap2">
+                    <div class="wrap2 inputs">
                         <label>E-Mail</label>
-                        <input type="text" name="correo" id="correo"/>
+                        <input type="text" name="correo" id="correo" required=""/>
                         <span class="focus-input2"></span>
                     </div>
-                    <div class="wrap2">
+                    <div class="wrap2 inputs">
                         <label>CLAVE</label>
-                        <input type="password" name="clave" id="clave"/>
+                        <input type="password" name="clave" id="clave" required=""/>
                         <span class="focus-input2"></span>
                     </div>
                     <button class="btn" id="btnregistrar">Registrar</button>

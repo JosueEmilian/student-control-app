@@ -125,6 +125,10 @@ input{
     border-radius: 5px;
 }
 
+.inputs input{
+    outline: none;
+}
+
 input:hover{
     border: 2px solid var(--color-palabras);
 }

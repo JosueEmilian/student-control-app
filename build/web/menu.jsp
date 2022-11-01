@@ -57,13 +57,13 @@
                     </li>
                     <ul class="links">
                         <li class="nav-link">
-                            <a href="#inicio">
+                            <a href="#inicio" class="selected">
                                 <i class="bx bx-home iconos"></i>
                                 <span class="texto nav-texto">INICIO</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#registrar">
+                            <a href="registroEstudiantes.jsp" class="">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
@@ -119,13 +119,12 @@
         </nav>
 
         <section class="inicio" id="inicio">
-            <h1 class="texto nav-texto">INICIO</h1>
             <!-- CARDS -->
             <div class="body2">
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/registrar.png)">
                     <div class="info-tarjeta">
                         <h2>Registrar</h2>
-                        <a href="#registrar">Ir a registrar</a>
+                        <a href="registroEstudiantes.jsp">Ir a registrar</a>
                     </div>
                 </div>
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/cola.png)">
@@ -142,39 +141,15 @@
                 </div>
             </div>
         </section>
-
-        <!-- SECCION 2 -->
-        <section class="inicio" id="registrar">
-            <h1 class="texto nav-texto">Esta es la seccion 2</h1>
-
-            <!-- CARDS -->
-            <div class="body2">
-                <div class="tarjeta" style="--imagen-card: url(..//imagenes/registrar.png)">
-                    <div class="info-tarjeta">
-                        <h2>Registrar</h2>
-                        <a href="#registrar">Ir a registrar</a>
-                    </div>
-                </div>
-                <div class="tarjeta" style="--imagen-card: url(..//imagenes/cola.png)">
-                    <div class="info-tarjeta">
-                        <h2>En cola</h2>
-                        <a href="#">Ver lista</a>
-                    </div>
-                </div>
-                <div class="tarjeta" style="--imagen-card: url(..//imagenes/inscripcion.png)">
-                    <div class="info-tarjeta">
-                        <h2>Inscripcion</h2>
-                        <a href="#">Ir a Inscribir</a>
-                    </div>
-                </div>
-            </div>
+        <section class="inicio">
+            <h1>Seccion Extra para datos random</h1>
         </section>
 
         <script src="./js/barra.js"></script>
 
 
         <!-- Utilizando JQuary para efecto scroll smoth -->
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
@@ -191,7 +166,7 @@
 
                             window.location.hash = hash;
                         });
-                    } 
+                    }
                 });
             });
         </script>
