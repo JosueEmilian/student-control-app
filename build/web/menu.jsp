@@ -32,7 +32,6 @@
         <title>Menu</title>
     </head>
     <body>
-        <!-- Rama Mod -->
         <nav class="sbarra salir">
             <header>
                 <div class="imagen-t">
@@ -119,6 +118,7 @@
         </nav>
 
         <section class="inicio" id="inicio">
+            
             <!-- CARDS -->
             <div class="body2">
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/registrar.png)">
@@ -130,7 +130,7 @@
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/cola.png)">
                     <div class="info-tarjeta">
                         <h2>En cola</h2>
-                        <a href="#">Ver lista</a>
+                        <a href="colaEstudiantes.jsp">Ver lista</a>
                     </div>
                 </div>
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/inscripcion.png)">

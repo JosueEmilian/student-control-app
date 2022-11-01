@@ -16,6 +16,11 @@
     --color-iconos: #fd4242;
     --color-barra:  #f3f3f3;
     --colorclick: #ca3838;
+    --colorTextoButton: #f53f16;
+    --colorTextoButton2: #bc3847;
+    --colorTextoButtonClick: #ff001e;
+    --colorTextoButtonClick2: #f94f29;
+    
 
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -32,7 +37,7 @@ body{
     height: 100vh;
     background: var(--fondo-general);
     /* background-image: url(../imagenes/Background.png); */
-    transition: var(--tran-05)
+    transition: var(--tran-05);
 }
 
 /* Colores Modo Obscuro */
@@ -43,6 +48,10 @@ body.noche{
     --color-iconos: #fff;
     --color-barra:  #2d3142;
     --colorclick: #b9b9b9;
+    --colorTextoButton:#363369;
+    --colorTextoButton2: #171a43;
+    --colorTextoButtonClick: #555290;
+    --colorTextoButtonClick2: #181e6b;
 }
 
 /* BARRA */
@@ -405,11 +414,11 @@ body.noche .modo::before{
     font-weight: 600;
     border: none;
     border-radius: 5px;
-    background-image: linear-gradient(to right,#f53f16, #bc3847);
+    background-image: linear-gradient(to right,var(--colorTextoButton), var(--colorTextoButton2));
 }
 
 .btn-container button:hover{
-    background-image: linear-gradient(to right, #ff001e, #f94f29);
+    background-image: linear-gradient(to right,var(--colorTextoButtonClick), var(--colorTextoButtonClick2));
     cursor: pointer;
 }
 

@@ -16,6 +16,10 @@
         <servlet-name>RegistrarAlumno</servlet-name>
         <servlet-class>servlet.RegistrarAlumno</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Mostrar</servlet-name>
+        <servlet-class>servlet.Mostrar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
         <url-pattern>/iniciar</url-pattern>
@@ -32,9 +36,17 @@
         <servlet-name>RegistrarAlumno</servlet-name>
         <url-pattern>/RegistroDeAlumno</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Mostrar</servlet-name>
+        <url-pattern>/Mostrar</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/errores.jsp</location>
+    </error-page>
 </web-app>

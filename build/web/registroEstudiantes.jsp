@@ -4,9 +4,6 @@
 <%
     HttpSession sesion = request.getSession(false);
     String usuario = (String) sesion.getAttribute("usuario");
-    if (usuario.equals("")) {
-        response.sendRedirect("index.jsp");
-    };
 %>    
 <!DOCTYPE html>
 <html>
@@ -28,7 +25,7 @@
                 response.sendRedirect("index.jsp");
             };
         %>
-        <title>Menu</title>
+        <title>Registro de Estudiantes</title>
     </head>
     <body>
         <nav class="sbarra salir">
@@ -116,11 +113,11 @@
             </div>
         </nav>
 
-        <!-- SECTION OF REGISTER STUDENTS -->
+        <!-- SECTION PARA REGISTRO DE ESTUDIANTES -->
         <section class="inicio" id="registroEstudiantes">
             <div class="body-Alu">
                 <div class="container">
-                    <form action="" method="post">
+                    <form action="RegistroDeAlumno" method="post">
                         <h2 class="tittle-Alu">Registro de Alumnos</h2>
                         <div class="contenido-Alu">
                             <div class="input-Alu">
@@ -137,7 +134,7 @@
                                 <input
                                     type="text"
                                     placeholder="Escriba los apellidos"
-                                    name="Nombre"
+                                    name="Apellido"
                                     required=""
                                     />
                             </div>
@@ -146,7 +143,7 @@
                                 <input
                                     type="text"
                                     placeholder="Escriba el No.Carnet "
-                                    name="Nombre"
+                                    name="Carnet"
                                     required=""
                                     />
                             </div>
@@ -155,20 +152,20 @@
                                 <input
                                     type="date"
                                     placeholder="Indique la fecha de Nacimiento"
-                                    name="Nombre"
+                                    name="Nacimiento"
                                     required=""
                                     />
                             </div>
                             <div class="input-Alu">
                                 <label for="">Correo Electronico</label>
-                                <input type="text" placeholder="@mail" name="Nombre" required="" />
+                                <input type="text" placeholder="@mail" name="Correo" required="" />
                             </div>
                             <div class="input-Alu">
                                 <label for="">Celular</label>
                                 <input
                                     type="text"
                                     placeholder="Escriba el No.Celular"
-                                    name="Nombre"
+                                    name="Celular"
                                     required=""
                                     />
                             </div>
