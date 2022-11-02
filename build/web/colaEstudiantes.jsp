@@ -66,7 +66,7 @@
                         <li class="nav-link">
                             <a href="colaEstudiantes.jsp" class="selected">
                                 <i class="bx bx-time-five iconos"></i>
-                                <span class="texto nav-texto">En cola</span>
+                                <span class="texto nav-texto">Ver En cola</span>
                             </a>
                         </li>
                         <li class="nav-link">
@@ -123,6 +123,7 @@
                         <thead>
                             <<tr>
                                 <th>Carnet</th>
+                                <th> - </th>
                                 <th>Fecha de Registro</th>
 
                             </tr>
