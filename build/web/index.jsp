@@ -16,11 +16,6 @@
         %>
     </head>
     <body>
-<<<<<<< HEAD
-        <!-- pull -->
-=======
-        <!-- pl -->
->>>>>>> ModificacionesEx
         <div class="login-container">
             <div class="login-info-container">
                 <h1 class="titulo">Inicio de Sesion</h1>
@@ -31,7 +26,7 @@
                     </div>
                     <div class="bloque-google">
                         <img src="./imagenes/apple.svg" alt="Apple" />
-                        <span class="textos">AppleE</span>
+                        <span class="textos">AppleNew</span>
                     </div>
                 </div>
                 <p>Inicia</p>
