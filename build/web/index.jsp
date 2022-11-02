@@ -16,7 +16,11 @@
         %>
     </head>
     <body>
+<<<<<<< HEAD
         <!-- pull -->
+=======
+        <!-- pl -->
+>>>>>>> ModificacionesEx
         <div class="login-container">
             <div class="login-info-container">
                 <h1 class="titulo">Inicio de Sesion</h1>
