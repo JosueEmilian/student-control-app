@@ -9,6 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 
 /**
@@ -29,8 +30,12 @@ public class RegistrarAlumno extends HttpServlet {
         String correo = request.getParameter("Correo");
         String celular = request.getParameter("Celular");
         
+        //para fecha de registro
+        Long datetime = System.currentTimeMillis();
+        Timestamp fechaHoraActual = new Timestamp(datetime);
+        
         ArrayList<String> campos = new ArrayList();
-        Estudiantes e = new Estudiantes(carnet, nombre, apellido, fecha_Nacimiento, correo,celular);
+        Estudiantes e = new Estudiantes(carnet, nombre, apellido, fecha_Nacimiento, correo,celular, fechaHoraActual);
         Consultas co = new Consultas();
         co.registrarEstudiante(e);
         request.getRequestDispatcher("registroEstudiantes.jsp").forward(request, response);

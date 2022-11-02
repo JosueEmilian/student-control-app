@@ -17,22 +17,15 @@
                 <thead>
                     <<tr>
                         <th>Carnet</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>FechaNacimiento</th>
-                        <th>Correo</th>
-                        <th>Celular</th>
+                        <th>Fecha de Registro</th>
+
                     </tr>
                 </thead>
                 <tbody>
                     <c:forEach var="dato" items="${Lista}">
                         <<tr>
                             <td>${dato.getCarnet()}</td>
-                            <td>${dato.getNombre()}</td>
-                            <td>${dato.getApellido()}</td>
-                            <td>${dato.getFechaNacimiento()}</td>
-                            <td>${dato.getCorreo()}</td>
-                            <td>${dato.getCelular()}</td>
+                            <td>${dato.getFechaHoraActual()}</td>
 
                             <!-- EDITAR -->
                             <td><a href="ConsultaEstudiantesCola?Carnet=${datos.getCarnet()}">Editar</a></td>

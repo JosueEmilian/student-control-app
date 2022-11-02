@@ -1,6 +1,8 @@
 package controlador;
 
 import java.sql.Date;
+import java.sql.Timestamp;
+
 
 public class Estudiantes {
 
@@ -10,19 +12,21 @@ public class Estudiantes {
     private Date fechaNacimiento;
     private String correo;
     private String celular;
+    private Timestamp fechaHoraActual;
     
     //Constructores
 
     public Estudiantes() {
     }
 
-    public Estudiantes(int carnet, String nombre, String apellido, Date fechaNacimiento, String correo, String celular) {
+    public Estudiantes(int carnet, String nombre, String apellido, Date fechaNacimiento, String correo, String celular, Timestamp fechaHoraActual) {
         this.carnet = carnet;
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
         this.correo = correo;
         this.celular = celular;
+        this.fechaHoraActual = fechaHoraActual;
     }
     
     //Getters and Setters
@@ -74,12 +78,21 @@ public class Estudiantes {
     public void setCelular(String celular) {
         this.celular = celular;
     }
+
+    public Timestamp getFechaHoraActual() {
+        return fechaHoraActual;
+    }
+
+    public void setFechaHoraActual(Timestamp fechaHoraActual) {
+        this.fechaHoraActual = fechaHoraActual;
+    }
     
-    //to String
+    
+    //ToString
 
     @Override
     public String toString() {
-        return "Estudiantes{" + "carnet=" + carnet + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento=" + fechaNacimiento + ", correo=" + correo + ", celular=" + celular + '}';
+        return "Estudiantes{" + "carnet=" + carnet + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento=" + fechaNacimiento + ", correo=" + correo + ", celular=" + celular + ", fechaHoraActual=" + fechaHoraActual + '}';
     }
     
     
