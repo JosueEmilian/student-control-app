@@ -422,6 +422,12 @@ body.noche .modo::before{
     cursor: pointer;
 }
 
+
+/* INICIO SECTION COLA ALUMN */
+
+
+
+/* RESPONSIVE */
 @media(max-width:1000px){
     .container{
         min-width: 280px;

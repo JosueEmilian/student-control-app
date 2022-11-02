@@ -68,7 +68,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="colaEstudiantes.jsp">
                                 <i class="bx bx-time-five iconos"></i>
                                 <span class="texto nav-texto">En cola</span>
                             </a>
@@ -130,7 +130,7 @@
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/cola.png)">
                     <div class="info-tarjeta">
                         <h2>En cola</h2>
-                        <a href="colaEstudiantes.jsp">Ver lista</a>
+                        <a href="colaEstudiantes.jsp">Agregar a la Cola</a>
                     </div>
                 </div>
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/inscripcion.png)">

@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="colaEstudiantes.jsp">
                                 <i class="bx bx-time-five iconos"></i>
                                 <span class="texto nav-texto">En cola</span>
                             </a>
