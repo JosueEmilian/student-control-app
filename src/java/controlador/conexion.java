@@ -2,9 +2,10 @@ package controlador;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 
 public class conexion {
-
+    private ResultSet rs;
     private Connection con;
     private String URL = "jdbc:oracle:thin:@localhost:1521:xe";
     private String usuarioDB = "USR_PROYECTO";
@@ -23,9 +24,9 @@ public class conexion {
         return con;
     }
 
-    /* 
+    /*
     public static void main(String[] args) {
        conexion con =new conexion();
     }
-     */
+    */
 }

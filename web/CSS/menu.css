@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -15,6 +16,11 @@
     --color-iconos: #fd4242;
     --color-barra:  #f3f3f3;
     --colorclick: #ca3838;
+    --colorTextoButton: #f53f16;
+    --colorTextoButton2: #bc3847;
+    --colorTextoButtonClick: #ff001e;
+    --colorTextoButtonClick2: #f94f29;
+    
 
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -31,7 +37,7 @@ body{
     height: 100vh;
     background: var(--fondo-general);
     /* background-image: url(../imagenes/Background.png); */
-    transition: var(--tran-05)
+    transition: var(--tran-05);
 }
 
 /* Colores Modo Obscuro */
@@ -42,6 +48,10 @@ body.noche{
     --color-iconos: #fff;
     --color-barra:  #2d3142;
     --colorclick: #b9b9b9;
+    --colorTextoButton:#363369;
+    --colorTextoButton2: #171a43;
+    --colorTextoButtonClick: #555290;
+    --colorTextoButtonClick2: #181e6b;
 }
 
 /* BARRA */
@@ -299,5 +309,145 @@ body.noche .modo::before{
     width: calc(100% - 88px);
 }
 
+/* menuSelector --> barra que indica la section*/
+.links a{
+    position: relative;
+}
 
-/* Rama mod */
+.links a::after{
+    content: "";
+    background-color: var(--colorclick);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+}
+
+.links a.selected::after{
+    opacity: 1;
+}
+
+
+/* INICIO SECTION REGISTER ALUMN */
+.body-Alu{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    box-shadow: 0 15px 20px #abb2b9;
+}
+
+.tittle-Alu{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--colorclick);
+    padding-bottom: 8px;
+    border-bottom: 2px solid silver;
+}
+
+.contenido-Alu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-Alu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-Alu:nth-child(2n){
+    justify-content: end;
+}
+
+.input-Alu label{
+    width: 95%;
+    color: var(--color-iconos);
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.input-Alu input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid var(--colorTexto);
+    outline: none;
+}
+
+.input-Alu input:is(:focus, :valid){
+    box-shadow: 0 2px 4px var(--colorTexto);
+}
+
+.anuncio p{
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: var(--colorTexto);
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.btn-container{
+    margin: 15px 0;
+}
+
+.btn-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,var(--colorTextoButton), var(--colorTextoButton2));
+}
+
+.btn-container button:hover{
+    background-image: linear-gradient(to right,var(--colorTextoButtonClick), var(--colorTextoButtonClick2));
+    cursor: pointer;
+}
+
+
+/* INICIO SECTION COLA ALUMN */
+
+
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+    .container{
+        min-width: 280px;
+    }
+
+    .contenido-Alu{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .input-Alu{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .input-Alu:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .contenido-Alu::-webkit-scrollbar{
+        width: 0;
+    }
+}

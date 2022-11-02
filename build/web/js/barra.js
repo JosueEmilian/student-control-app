@@ -21,3 +21,4 @@ const body = document.querySelector("body"),
             textoModo.innerText = "Modo Oscuro";
         }
        });
+       
