@@ -58,7 +58,7 @@
                         <li class="nav-link">
                             <a href="#inicio" class="selected">
                                 <i class="bx bx-home iconos"></i>
-                                <span class="texto nav-texto">INICIO</span>
+                                <span class="texto nav-texto">Menu Principal</span>
                             </a>
                         </li>
                         <li class="nav-link">
