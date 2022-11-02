@@ -388,16 +388,20 @@ body.noche .modo::before{
     outline: none;
 }
 
-.input-Alu input:is(:focus, :valid){
+.input-Alu input:is(:focus, :valid)
+{
     box-shadow: 0 2px 4px var(--colorTexto);
 }
 
-.anuncio p{
+.anuncio p
+
+{
     font-size: 14px;
     font-family: 'Nanum Gothic', sans-serif;
     color: var(--colorTexto);
     margin: 5px 0;
     padding: 10px;
+
 }
 
 .btn-container{
