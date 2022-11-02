@@ -14,15 +14,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-       
+
         <link rel="stylesheet" href="./CSS/menu.css" />
         <!-- Icons Boxicon -->
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
             />       
-        
-         <%
+
+        <%
             response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             response.setHeader("Pragma", "no-cache");
             response.setDateHeader("Expires", 0);
@@ -31,7 +31,7 @@
                 response.sendRedirect("index.jsp");
             };
         %>  
- 
+
         <title>Inscribir</title>       
     </head>
     <body>
@@ -120,63 +120,56 @@
             </div>
         </nav>
 
-        <!-- SECTION PARA REGISTRO DE ESTUDIANTES -->
-        <section class="inicio" id="registroEstudiantes">
-           
-            
-<!------------------------------------------------------------------------------------------------------------------------------------->          
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-<!------------------------------------------------------------------------------------------------------------------------------------->    
+        <!-- SECTION PARA INSCRIPCION DE ESTUDIANTES EN COLA-->
+        <section class="inicio" id="InscribirEstudiantes">
 
-        </section>
-        <script src="./js/barra.js"></script>       
-    </body>
-</html>
+        <!------------------------------------------------------------------------------------------------------------------------------------->         
+
+            <div class="body-Alu">
+                <div class="container">
+                    <form action="inscribir" method="post">
+                        <h2 class="tittle-Alu">Inscripcion De Alumnos</h2>
+                        <div class="contenido-Alu">
+                            <div class="input-Alu">
+
+                                <label for="">No. Carnet</label>
+                                <input
+
+                                    <div class="input-Alu">
+                                <label for="">Fecha De Registro</label>
+                                <input
+                                    type="date"
+                                    placeholder="Fecha De Registro"
+                                    name="Dia Registrado"
+                                    required=""
+
+                                    <div class="anuncio">
+                                <p>     
+
+
+                                <div class="anuncio">
+                                    <p>
+                                        Confirmar La Inscripción
+                                    </p>
+                                </div>            
+                            </div>  
+
+
+                            <div class="btn-container">
+                                <button type="submit">Registrar</button>
+                            </div>   
+
+                        </div>
+
+                        <div class="anuncio">
+                            <p>
+                                Conocereis la verdad y la verdad os hara libres
+                            </p>
+                        </div>        
+
+        <!------------------------------------------------------------------------------------------------------------------------------------->    
+
+                        </section>
+                        <script src="./js/barra.js"></script>       
+                        </body>
+                        </html>
