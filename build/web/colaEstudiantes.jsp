@@ -70,7 +70,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="inscribir.jsp">
                                 <i class="bx bxs-user-check iconos"></i>
                                 <span class="texto nav-texto">Inscribir</span>
                             </a>

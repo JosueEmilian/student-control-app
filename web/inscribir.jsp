@@ -1,21 +1,28 @@
+<%-- 
+    Document   : inscribir
+    Created on : 2/11/2022, 10:32:30
+    Author     : OSCARIN
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%
     HttpSession sesion = request.getSession(false);
     String usuario = (String) sesion.getAttribute("usuario");
-%> 
+%>   
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+       
         <link rel="stylesheet" href="./CSS/menu.css" />
         <!-- Icons Boxicon -->
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
             />       
-        <%
+        
+         <%
             response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             response.setHeader("Pragma", "no-cache");
             response.setDateHeader("Expires", 0);
@@ -23,11 +30,11 @@
             if (sesion.getAttribute("usuario") == null) {
                 response.sendRedirect("index.jsp");
             };
-        %>
-        <title>Cola Estudiantes</title>
+        %>  
+ 
+        <title>Inscribir</title>       
     </head>
     <body>
-
         <nav class="sbarra salir">
             <header>
                 <div class="imagen-t">
@@ -58,19 +65,19 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="registroEstudiantes.jsp">
+                            <a href="registroEstudiantes.jsp" class="">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="colaEstudiantes.jsp" class="selected">
+                            <a href="colaEstudiantes.jsp">
                                 <i class="bx bx-time-five iconos"></i>
                                 <span class="texto nav-texto">Ver En cola</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="inscribir.jsp">
+                            <a href="#" class="selected">
                                 <i class="bx bxs-user-check iconos"></i>
                                 <span class="texto nav-texto">Inscribir</span>
                             </a>
@@ -113,44 +120,63 @@
             </div>
         </nav>
 
-        <!-- SECTION COLA ESTUDIANTES -->
+        <!-- SECTION PARA REGISTRO DE ESTUDIANTES -->
         <section class="inicio" id="registroEstudiantes">
+           
+            
+<!------------------------------------------------------------------------------------------------------------------------------------->          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<!------------------------------------------------------------------------------------------------------------------------------------->    
 
-            <div class="texto">
-                <h1>COLA ESTUDIANTES</h1>
-                <div>
-                    <table>
-                        <thead>
-                            <<tr>
-                                <th>Carnet</th>
-                                <th> - </th>
-                                <th>Fecha de Registro</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <c:forEach var="dato" items="${Lista}">
-                                <<tr>
-                                    <td>${dato.getCarnet()}</td>
-                                    <td>${dato.getFechaHoraActual()}</td>
-
-                                    <!-- EDITAR -->
-                                    <td><a href="ConsultaEstudiantesCola?Carnet=${datos.getCarnet()}">Editar</a></td>
-                                    <td><a href="EliminaUsuario?codigo=${datos.getCodigo()}">Eliminar</a></td>
-
-                                </tr>
-                            </c:forEach>
-                        </tbody>
-                    </table>
-                </div>
-                <form action="ConsultaEstudiantesCola" method="post">
-                    <input type="submit" name="consulta" value="Consultar">
-                </form>
-
-            </div>
         </section>
-
-        <script src="./js/barra.js"></script>
-
+        <script src="./js/barra.js"></script>       
     </body>
 </html>

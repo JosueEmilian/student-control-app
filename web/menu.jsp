@@ -74,7 +74,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="inscribir.jsp">
                                 <i class="bx bxs-user-check iconos"></i>
                                 <span class="texto nav-texto">Inscribir</span>
                             </a>
@@ -136,7 +136,7 @@
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/inscripcion.png)">
                     <div class="info-tarjeta">
                         <h2>Inscripcion</h2>
-                        <a href="#">Ir a Inscribir</a>
+                        <a href="inscribir.jsp">Ir a Inscribir</a>
                     </div>
                 </div>
             </div>
