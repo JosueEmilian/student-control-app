@@ -9,6 +9,8 @@
 <%
     HttpSession sesion = request.getSession(false);
     String usuario = (String) sesion.getAttribute("usuario");
+%>  
+
 %>   
 <!DOCTYPE html>
 <html>
@@ -31,6 +33,10 @@
                 response.sendRedirect("index.jsp");
             };
         %>  
+        <title>Inscribir</title>
+    </head>
+    <body>
+
 
         <title>Inscribir</title>       
     </head>
@@ -61,6 +67,11 @@
                         <li class="nav-link">
                             <a href="menu.jsp">
                                 <i class="bx bx-home iconos"></i>
+                                <span class="texto nav-texto">INICIO</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="registroEstudiantes.jsp" >
                                 <span class="texto nav-texto">Menu Principal</span>
                             </a>
                         </li>
@@ -73,6 +84,11 @@
                         <li class="nav-link">
                             <a href="colaEstudiantes.jsp">
                                 <i class="bx bx-time-five iconos"></i>
+                                <span class="texto nav-texto">En cola</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="inscribir.jsp" class="selected">
                                 <span class="texto nav-texto">Ver En cola</span>
                             </a>
                         </li>
@@ -83,12 +99,14 @@
                             </a>
                         </li>
                         <li class="nav-link">
+                            <a href="anuncios.jsp">
                             <a href="#">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
                         </li>
                         <li class="nav-link">
+                            <a href="actividades.jsp">
                             <a href="#">
                                 <i class="bx bx-bar-chart-square iconos"></i>
                                 <span class="texto nav-texto">Actividades</span>
@@ -119,6 +137,52 @@
                 </div>
             </div>
         </nav>
+
+        <!-- SECTION PARA INSCRIPCION DE ESTUDIANTES -->
+        <section class="inicio" id="registroEstudiantes">
+
+            <div class="body-Alu">
+                <div class="container">
+
+                    <form action="" method="post">
+                        <h2 class="tittle-Alu">Inscripcion de Alumnos</h2>
+                        <div class="display">
+                            <div class="input-Alu display-alu">
+                                <label for="">No. Carnet</label>
+                                <input
+                                    type="text"
+                                    placeholder="Escriba el No.Carnet"
+                                    name="Nombre"
+                                    required=""
+                                    />
+                            </div>
+                            <div class="input-Alu display-alu">
+                                <label for="">Fecha de Registro</label>
+                                <input
+                                    type="date"
+                                    placeholder="Indique la fecha de Registro"
+                                    name="Apellido"
+                                    required=""
+                                    />
+                            </div>
+                            <div class="anuncio">
+                                <p>
+                                    Conocereis la verdad y la verdad os hara libres.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button type="submit">Registrar</button>
+                        </div>
+                    </form>
+
+                </div>                
+            </div>   
+
+
+        </section>
+
+        <script src="./js/barra.js"></script>
 
         <!-- SECTION PARA INSCRIPCION DE ESTUDIANTES EN COLA-->
         <section class="inicio" id="InscribirEstudiantes">
