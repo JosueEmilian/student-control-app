@@ -80,7 +80,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="#AnunciosN">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
@@ -118,7 +118,7 @@
         </nav>
 
         <section class="inicio" id="inicio">
-            
+
             <!-- CARDS -->
             <div class="body2">
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/registrar.png)">
@@ -141,64 +141,26 @@
                 </div>
             </div>
         </section>
-        <section class="inicio">
-            <h1>Seccion Extra para datos random</h1>
-            
-        <!<!----------------------------------------------------------Anuncios---------------------------------------------------------->        
-            
-            
-            
-            
-            
-          
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        <!<!----------------------------------------------------------Anuncios---------------------------------------------------------->    
-            
+        <section class="inicio" id="AnunciosN">
+            <h1>Anuncios Publicados</h1>
+
+            <!<!----------------------------------------------------------Anuncios---------------------------------------------------------->        
+
+            <div class="body">
+                <div class="slider">
+                    <ul>
+                        <li><img src="imagenes/Anuncio1.jpg" alt=""></li> 
+                        <li><img src="imagenes/Anuncio2.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio3.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio4.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio5.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio6.JPG" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!<!----------------------------------------------------------Anuncios---------------------------------------------------------->    
+
         </section>
 
         <script src="./js/barra.js"></script>

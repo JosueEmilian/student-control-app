@@ -473,3 +473,49 @@ body.noche .modo::before{
     padding: 10px;
     width: 100%;
 }
+
+/*Se agrego seccion de anuncios*/
+
+.slider
+
+{
+    width: 680PX;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul
+
+{
+    display: inline-flex;
+    padding: 0;
+    width: auto;
+    animation: Animacion1 20s infinite alternate;
+}
+
+.slider li  
+{
+    width: auto;
+    list-style: none;
+}
+
+.slider img 
+
+{
+    width: auto;
+}
+
+@keyframes Animacion1 
+{
+    0% { margin-left: 0;}
+    17% { margin-left: 0;}
+
+    34% { margin-left: -100%;}
+    51% { margin-left: -250%;}
+
+    68% { margin-left: -350%;}
+    84% { margin-left: -450%;}
+
+    100% { margin-left: -550%;}
+
+}
