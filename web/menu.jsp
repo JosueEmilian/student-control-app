@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="registroEstudiantes.jsp" class="">
+                            <a href="registroEstudiantes.jsp">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
@@ -74,19 +74,19 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="inscribir.jsp">
                                 <i class="bx bxs-user-check iconos"></i>
                                 <span class="texto nav-texto">Inscribir</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="anuncios.jsp">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="actividades.jsp">
                                 <i class="bx bx-bar-chart-square iconos"></i>
                                 <span class="texto nav-texto">Actividades</span>
                             </a>
@@ -118,7 +118,7 @@
         </nav>
 
         <section class="inicio" id="inicio">
-            
+
             <!-- CARDS -->
             <div class="body2">
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/registrar.png)">
@@ -136,20 +136,16 @@
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/inscripcion.png)">
                     <div class="info-tarjeta">
                         <h2>Inscripcion</h2>
-                        <a href="#">Ir a Inscribir</a>
+                        <a href="inscribir.jsp">Ir a Inscribir</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="inicio">
-            <h1>Seccion Extra para datos random</h1>
-        </section>
-
+                       
+        <!-- SCRIPTS -->
         <script src="./js/barra.js"></script>
-
-
+        
         <!-- Utilizando JQuary para efecto scroll smoth -->
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
