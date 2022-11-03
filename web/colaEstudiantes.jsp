@@ -70,19 +70,19 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="inscribir.jsp">
                                 <i class="bx bxs-user-check iconos"></i>
                                 <span class="texto nav-texto">Inscribir</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="anuncios.jsp">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="actividades.jsp">
                                 <i class="bx bx-bar-chart-square iconos"></i>
                                 <span class="texto nav-texto">Actividades</span>
                             </a>
@@ -134,7 +134,7 @@
                                     <td>${dato.getFechaHoraActual()}</td>
 
                                     <!-- EDITAR -->
-                                    <td><a href="ConsultaEstudiantesCola?Carnet=${datos.getCarnet()}">Editar</a></td>
+                                    <td><a href="agregarAlaColaa?Carnet=${datos.getCarnet()}">Agregar</a></td>
                                     <td><a href="EliminaUsuario?codigo=${datos.getCodigo()}">Eliminar</a></td>
 
                                 </tr>
