@@ -26,7 +26,7 @@
                     </div>
                     <div class="bloque-google">
                         <img src="./imagenes/apple.svg" alt="Apple" />
-                        <span class="textos">AppleNew</span>
+                        <span class="textos">Apple()</span>
                     </div>
                 </div>
                 <p>Inicia</p>
