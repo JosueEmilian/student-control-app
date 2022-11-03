@@ -1,10 +1,17 @@
+<%-- 
+    Document   : inscribir
+    Created on : 2/11/2022, 10:32:30
+    Author     : OSCARIN
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%
     HttpSession sesion = request.getSession(false);
     String usuario = (String) sesion.getAttribute("usuario");
+%>  
 
+%>   
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,6 +33,9 @@
                 response.sendRedirect("index.jsp");
             };
         %>  
+        <title>Inscribir</title>
+    </head>
+    <body>
 
 
         <title>Inscribir</title>       

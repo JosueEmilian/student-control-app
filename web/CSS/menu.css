@@ -572,3 +572,51 @@ body.noche .modo::before{
     100% { margin-left: -550%;}
 
 }
+
+/*Se agregaron seccion de actividades*/
+
+.ActividadesG
+
+{
+    width: 960px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.ActividadesG ul
+
+{
+    display: inline-flex;
+    padding: 0;
+    width: 1000px;
+    animation: Animacion1 60s infinite alternate;
+}
+
+.ActividadesG li  
+{
+    width: auto;
+    list-style: none;
+}
+
+.ActividadesG img 
+
+{
+    width: auto;
+}
+
+@keyframes Animacion1 
+{
+    0% { margin-left: 0;}
+    8% { margin-left: 0;}
+    16% { margin-left: -100%;}
+    24% { margin-left: -200%;}
+    32% { margin-left: -300%;}
+    40% { margin-left: -400%;}
+    48% { margin-left: -500%;}
+    56% { margin-left: -600%;}
+    72% { margin-left: -700%;}
+    81% { margin-left: -800%;}
+    90% { margin-left:-900%;}
+    100% { margin-left:-1000%;}
+
+}

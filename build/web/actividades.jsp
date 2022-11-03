@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <link rel="stylesheet" href="./CSS/menu.css" />
         <!-- Icons Boxicon -->
@@ -31,8 +31,8 @@
         <title>Actividades</title>
     </head>
     <body>
-       
-          <nav class="sbarra salir">
+
+        <nav class="sbarra salir">
             <header>
                 <div class="imagen-t">
                     <span class="imagen">
@@ -117,9 +117,30 @@
             </div>
         </nav>
 
-        <!-- SECTION ACTIVIDADES -->
+        <!-- SECTION ACTIVIDADES -->   
         <section class="inicio" id="anuncios">
-            <h1>ACTIVIDADES</h1>
+            <!<!-----------------------------------------------------------Actividades----------------------------------------------------------->        
+
+            <div class="body">
+                <div class="ActividadesG">
+                    <ul>
+                        <li><img src="imagenes/Actividad1.jpg" alt=""></li> 
+                        <li><img src="imagenes/Actividad2.png" alt=""></li>
+                        <li><img src="imagenes/Actividad3.jpg" alt=""></li>
+                        <li><img src="imagenes/Actividad4.jpg" alt=""></li>
+                        <li><img src="imagenes/Actividad5.jpg" alt=""></li>
+                        <li><img src="imagenes/Actividad6.jpg" alt=""></li>
+                        <li><img src="imagenes/Actividad7.jpg" alt=""></li>
+                        <li><img src="imagenes/Actividad8.jpg" alt=""></li>
+                        <li><img src="imagenes/Actividad9.jpeg" alt=""></li>
+                        <li><img src="imagenes/Actividad10.jpeg" alt=""></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!<!-----------------------------------------------------------Actividades-----------------------------------------------------------> 
+
         </section>
 
         <!-- SCRIPTS -->
@@ -146,6 +167,6 @@
                 });
             });
         </script>
-        
+
     </body>
 </html>
