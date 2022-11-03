@@ -388,16 +388,20 @@ body.noche .modo::before{
     outline: none;
 }
 
-.input-Alu input:is(:focus, :valid){
+.input-Alu input:is(:focus, :valid)
+{
     box-shadow: 0 2px 4px var(--colorTexto);
 }
 
-.anuncio p{
+.anuncio p
+
+{
     font-size: 14px;
     font-family: 'Nanum Gothic', sans-serif;
     color: var(--colorTexto);
     margin: 5px 0;
     padding: 10px;
+
 }
 
 .btn-container{
@@ -503,4 +507,68 @@ body.noche .modo::before{
     .contenido-Alu::-webkit-scrollbar{
         width: 0;
     }
+}
+
+
+/*Esta parte la modifique yo "Oscar"*/
+
+.input-Alu
+
+{
+    margin: auto;
+    padding: 10px;   
+    width: 297px;
+}
+
+.btn-container
+{
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+/*Se agrego seccion de anuncios*/
+
+.slider
+
+{
+    width: 680PX;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul
+
+{
+    display: inline-flex;
+    padding: 0;
+    width: auto;
+    animation: Animacion1 20s infinite alternate;
+}
+
+.slider li  
+{
+    width: auto;
+    list-style: none;
+}
+
+.slider img 
+
+{
+    width: auto;
+}
+
+@keyframes Animacion1 
+{
+    0% { margin-left: 0;}
+    17% { margin-left: 0;}
+
+    34% { margin-left: -100%;}
+    51% { margin-left: -250%;}
+
+    68% { margin-left: -350%;}
+    84% { margin-left: -450%;}
+
+    100% { margin-left: -550%;}
+
 }

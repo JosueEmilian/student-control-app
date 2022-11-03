@@ -54,7 +54,7 @@
                         <li class="nav-link">
                             <a href="menu.jsp">
                                 <i class="bx bx-home iconos"></i>
-                                <span class="texto nav-texto">INICIO</span>
+                                <span class="texto nav-texto">Menu Principal</span>
                             </a>
                         </li>
                         <li class="nav-link">
@@ -66,7 +66,7 @@
                         <li class="nav-link">
                             <a href="colaEstudiantes.jsp">
                                 <i class="bx bx-time-five iconos"></i>
-                                <span class="texto nav-texto">En cola</span>
+                                <span class="texto nav-texto">Ver En cola</span>
                             </a>
                         </li>
                         <li class="nav-link">
@@ -171,7 +171,7 @@
                             </div>
                             <div class="anuncio">
                                 <p>
-                                    Registro de estudiantes para el ciclo 2023 del colegio
+                                    Registro de estudiantes para el ciclo 2023 del Colegio
                                     "proyectofinal" por favor lea bien los datos antes de ingresarlos.
                                 </p>
                             </div>

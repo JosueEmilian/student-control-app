@@ -58,7 +58,7 @@
                         <li class="nav-link">
                             <a href="#inicio" class="selected">
                                 <i class="bx bx-home iconos"></i>
-                                <span class="texto nav-texto">INICIO</span>
+                                <span class="texto nav-texto">Menu Principal</span>
                             </a>
                         </li>
                         <li class="nav-link">
@@ -70,7 +70,7 @@
                         <li class="nav-link">
                             <a href="colaEstudiantes.jsp">
                                 <i class="bx bx-time-five iconos"></i>
-                                <span class="texto nav-texto">En cola</span>
+                                <span class="texto nav-texto">Ver En cola</span>
                             </a>
                         </li>
                         <li class="nav-link">
@@ -81,6 +81,7 @@
                         </li>
                         <li class="nav-link">
                             <a href="anuncios.jsp">
+                            <a href="#AnunciosN">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
@@ -129,7 +130,7 @@
                 </div>
                 <div class="tarjeta" style="--imagen-card: url(..//imagenes/cola.png)">
                     <div class="info-tarjeta">
-                        <h2>En cola</h2>
+                        <h2>Ver En cola</h2>
                         <a href="colaEstudiantes.jsp">Agregar a la Cola</a>
                     </div>
                 </div>
@@ -143,6 +144,28 @@
         </section>
                        
         <!-- SCRIPTS -->
+        <section class="inicio" id="AnunciosN">
+            <h1>Anuncios Publicados</h1>
+
+            <!<!----------------------------------------------------------Anuncios---------------------------------------------------------->        
+
+            <div class="body">
+                <div class="slider">
+                    <ul>
+                        <li><img src="imagenes/Anuncio1.jpg" alt=""></li> 
+                        <li><img src="imagenes/Anuncio2.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio3.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio4.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio5.jpg" alt=""></li>
+                        <li><img src="imagenes/Anuncio6.JPG" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!<!----------------------------------------------------------Anuncios---------------------------------------------------------->    
+
+        </section>
+
         <script src="./js/barra.js"></script>
         
         <!-- Utilizando JQuary para efecto scroll smoth -->

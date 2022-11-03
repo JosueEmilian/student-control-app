@@ -16,7 +16,7 @@
                 <div class="form">
                     <div class="heading">
                         <img src="./imagenes/logo.png" class="logo" />
-                        <h1 class="titulo">registro de usuarios</h1>
+                        <h1 class="titulo">Registar Usuario-</h1>
                     </div>
                     <div class="wrap">
                         <div class="f1 inputs">

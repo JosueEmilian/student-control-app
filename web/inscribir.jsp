@@ -1,9 +1,17 @@
+<%-- 
+    Document   : inscribir
+    Created on : 2/11/2022, 10:32:30
+    Author     : OSCARIN
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%
     HttpSession sesion = request.getSession(false);
     String usuario = (String) sesion.getAttribute("usuario");
 %>  
+
+%>   
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,6 +28,7 @@
             response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             response.setHeader("Pragma", "no-cache");
             response.setDateHeader("Expires", 0);
+
             if (sesion.getAttribute("usuario") == null) {
                 response.sendRedirect("index.jsp");
             };
@@ -28,6 +37,10 @@
     </head>
     <body>
 
+
+        <title>Inscribir</title>       
+    </head>
+    <body>
         <nav class="sbarra salir">
             <header>
                 <div class="imagen-t">
@@ -59,6 +72,11 @@
                         </li>
                         <li class="nav-link">
                             <a href="registroEstudiantes.jsp" >
+                                <span class="texto nav-texto">Menu Principal</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="registroEstudiantes.jsp" class="">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
@@ -71,18 +89,25 @@
                         </li>
                         <li class="nav-link">
                             <a href="inscribir.jsp" class="selected">
+                                <span class="texto nav-texto">Ver En cola</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="selected">
                                 <i class="bx bxs-user-check iconos"></i>
                                 <span class="texto nav-texto">Inscribir</span>
                             </a>
                         </li>
                         <li class="nav-link">
                             <a href="anuncios.jsp">
+                            <a href="#">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
                         </li>
                         <li class="nav-link">
                             <a href="actividades.jsp">
+                            <a href="#">
                                 <i class="bx bx-bar-chart-square iconos"></i>
                                 <span class="texto nav-texto">Actividades</span>
                             </a>
@@ -159,5 +184,57 @@
 
         <script src="./js/barra.js"></script>
 
+        <!-- SECTION PARA INSCRIPCION DE ESTUDIANTES EN COLA-->
+        <section class="inicio" id="InscribirEstudiantes">
+
+
+            <!------------------------------------------------------------------------------------------------------------------------------------->         
+
+            <div class="body-Alu">
+                <div class="container">
+                    <form action="inscribir" method="post">
+                        <h2 class="tittle-Alu">Inscripcion De Alumnos</h2>
+                        <div class="contenido-Alu">
+                            <div class="input-Alu">
+
+                                <label for="">No. Carnet</label>
+                                <input
+
+                                    <div class="input-Alu">
+                                <label for="">Fecha De Registro</label>
+                                <input
+                                    type="date"
+                                    placeholder="Fecha De Registro"
+                                    name="Dia Registrado"
+                                    required=""
+
+                                    <div class="anuncio">
+                                <p>     
+                                <div class="anuncio">
+                                    <p>
+                                        Confirmar La Inscripción
+                                    </p>
+                                </div>            
+                            </div>  
+
+
+                            <div class="btn-container">
+                                <button type="submit">Registrar</button>
+                            </div>   
+
+                        </div>
+
+                        <div class="anuncio">
+                            <p>
+                                Conocereis la verdad y la verdad os hara libres
+                            </p>
+                        </div>        
+                </div>                
+            </div>   
+
+    <!------------------------------------------------------------------------------------------------------------------------------------->    
+
+        </section>
+        <script src="./js/barra.js"></script>       
     </body>
 </html>
