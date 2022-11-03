@@ -134,7 +134,7 @@
                                     <td>${dato.getFechaHoraActual()}</td>
 
                                     <!-- EDITAR -->
-                                    <td><a href="ConsultaEstudiantesCola?Carnet=${datos.getCarnet()}">Editar</a></td>
+                                    <td><a href="agregarAlaColaa?Carnet=${datos.getCarnet()}">Agregar</a></td>
                                     <td><a href="EliminaUsuario?codigo=${datos.getCodigo()}">Eliminar</a></td>
 
                                 </tr>

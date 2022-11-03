@@ -127,7 +127,7 @@
                                 <input
                                     type="text"
                                     placeholder="Escriba el No.Carnet"
-                                    name="Nombre"
+                                    name="Carnet"
                                     required=""
                                     />
                             </div>
@@ -136,7 +136,7 @@
                                 <input
                                     type="date"
                                     placeholder="Indique la fecha de Registro"
-                                    name="Apellido"
+                                    name="Registro"
                                     required=""
                                     />
                             </div>

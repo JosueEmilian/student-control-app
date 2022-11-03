@@ -20,7 +20,7 @@
     --colorTextoButton2: #bc3847;
     --colorTextoButtonClick: #ff001e;
     --colorTextoButtonClick2: #f94f29;
-    
+
 
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -332,7 +332,7 @@ body.noche .modo::before{
 
 /* INICIO SECTION REGISTER ALUMN */
 .body-Alu{
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -434,7 +434,16 @@ body.noche .modo::before{
 }
 
 
-/* ANUNCIOS */
+    .display-alu:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .display::-webkit-scrollbar{
+        width: 0;
+    }
+
+
+/* SECTION ANUNCIOS */
 .slider
 
 {
@@ -473,12 +482,60 @@ body.noche .modo::before{
     51% { margin-left: -250%;}
 
     68% { margin-left: -350%;}
-    84% { margin-left: -450%;}
+    84% { margin-left:-450%;}
 
-    100% { margin-left: -550%;}
+    100% { margin-left:-550%;}
 
 }
 
+
+/* SECTION ACTIVIDADES */
+
+.ActividadesG
+
+{
+    width: 960px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.ActividadesG ul
+
+{
+    display: inline-flex;
+    padding: 0;
+    width: 1000px;
+    animation: Animacion1 60s infinite alternate;
+}
+
+.ActividadesG li  
+{
+    width: auto;
+    list-style: none;
+}
+
+.ActividadesG img 
+
+{
+    width: auto;
+}
+
+@keyframes Animacion1 
+{
+    0% { margin-left: 0;}
+    8% { margin-left: 0;}
+    16% { margin-left: -100%;}
+    24% { margin-left: -200%;}
+    32% { margin-left: -300%;}
+    40% { margin-left: -400%;}
+    48% { margin-left: -500%;}
+    56% { margin-left: -600%;}
+    72% { margin-left: -700%;}
+    81% { margin-left: -800%;}
+    90% { margin-left:-900%;}
+    100% { margin-left:-1000%;}
+
+}
 
 /* RESPONSIVE */
 @media(max-width:1000px){
