@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="registroEstudiantes.jsp" class="">
+                            <a href="registroEstudiantes.jsp">
                                 <i class="bx bx-file iconos"></i>
                                 <span class="texto nav-texto">Registrar</span>
                             </a>
@@ -80,13 +80,14 @@
                             </a>
                         </li>
                         <li class="nav-link">
+                            <a href="anuncios.jsp">
                             <a href="#AnunciosN">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="actividades.jsp">
                                 <i class="bx bx-bar-chart-square iconos"></i>
                                 <span class="texto nav-texto">Actividades</span>
                             </a>
@@ -141,6 +142,8 @@
                 </div>
             </div>
         </section>
+                       
+        <!-- SCRIPTS -->
         <section class="inicio" id="AnunciosN">
             <h1>Anuncios Publicados</h1>
 
@@ -164,10 +167,8 @@
         </section>
 
         <script src="./js/barra.js"></script>
-
-
+        
         <!-- Utilizando JQuary para efecto scroll smoth -->
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(document).ready(function () {

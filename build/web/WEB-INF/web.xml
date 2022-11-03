@@ -20,6 +20,10 @@
         <servlet-name>ConsultaEstudiantesCola</servlet-name>
         <servlet-class>servlet.ConsultaEstudiantesCola</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ConsultaEstudiantes</servlet-name>
+        <servlet-class>servlet.ConsultaEstudiantes</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
         <url-pattern>/iniciar</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>ConsultaEstudiantesCola</servlet-name>
         <url-pattern>/ConsultaEstudiantesCola</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConsultaEstudiantes</servlet-name>
+        <url-pattern>/ConsultaEstudiantes</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

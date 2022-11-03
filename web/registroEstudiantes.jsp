@@ -76,13 +76,13 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="anuncios.jsp">
                                 <i class="bx bx-notification iconos"></i>
                                 <span class="texto nav-texto">Anuncios</span>
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="actividades.jsp">
                                 <i class="bx bx-bar-chart-square iconos"></i>
                                 <span class="texto nav-texto">Actividades</span>
                             </a>
@@ -117,7 +117,7 @@
         <section class="inicio" id="registroEstudiantes">
             <div class="body-Alu">
                 <div class="container">
-                    <form action="RegistroDeAlumno" method="post">
+                    <form action="RegistrarAlumno" method="post">
                         <h2 class="tittle-Alu">Registro de Alumnos</h2>
                         <div class="contenido-Alu">
                             <div class="input-Alu">
