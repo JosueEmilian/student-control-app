@@ -17,7 +17,7 @@ body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     background-image: url(../imagenes/Background.png);
-   /*  background-image: linear-gradient(to top, #fff1ea 0%, #fff1ea 100%); */
+   /*background-image: linear-gradient(to top, #fff1ea 0%, #fff1ea 100%); */
 }
 
 .titulo{
