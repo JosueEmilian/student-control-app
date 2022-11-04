@@ -12,7 +12,6 @@
 body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-
     /* imagen de fondo */
     background-image: url(../imagenes/Background.png);
 }
@@ -21,9 +20,9 @@ body{
     height: 43.75em;
     width: 60em;
     margin: 6em auto;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -38,6 +37,7 @@ body{
 }
 
 .imagen-container{
+    
     width: 50%;
     background-color: var(--color-imagen);
     box-sizing: border-box;
@@ -58,7 +58,8 @@ body{
 .google-login{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    cursor: pointer;
 }
 
 .bloque-google{
@@ -146,6 +147,7 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+
 
 /* Responsive */
 @media screen and (max-width: 1160px){

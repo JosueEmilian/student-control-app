@@ -7,8 +7,8 @@ import java.sql.ResultSet;
 public class conexion {
     private ResultSet rs;
     private Connection con;
-    private String URL = "jdbc:oracle:thin:@localhost:1521:xe";
-    private String usuarioDB = "USR_PROYECTO";
+    private String URL = "jdbc:oracle:thin:@54.242.103.55:1521:xe";
+    private String usuarioDB = "USR_PROYECTOPROGRA2";
     private String claveDB = "umg123";
 
     public conexion() {
