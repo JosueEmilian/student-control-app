@@ -120,35 +120,57 @@
         <section class="inicio" id="registroEstudiantes">
 
             <div class="texto">
-                <h1>COLA ESTUDIANTES</h1>
+                <h1 class="titulo-tabla-principal">ESTUDIANTES PARA AGREGAR A LA COLA</h1>
                 <div>
                     <table>
                         <thead>
-                            <<tr>
-                                <th>Carnet</th>
-                                <th>Fecha de Registro</th>
-
+                            <
+                            <tr>
+                                <th class="titulo-tabla">Carnet</th>
+                                <th class="titulo-tabla">Fecha de Registro</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <c:forEach var="dato" items="${Lista}">
-                                <<tr>
-                                    <td>${dato.getCarnet()}</td>
-                                    <td>${dato.getFechaHoraActual()}</td>
-
+                            <form action="AddColaEstudiantes">
+                                <tr>
+                                    <td>
+                                        <input
+                                            class="input-table"
+                                            type="text"
+                                            name="Carnet"
+                                            value="${dato.getCarnet()}"
+                                            readonly
+                                            />
+                                    </td>
+                                    <td>
+                                        <input
+                                            class="input-table"
+                                            type="date-time"
+                                            name="Fecha"
+                                            value="${dato.getFechaHoraActual()}"
+                                            />
+                                    </td>
                                     <!-- EDITAR -->
-                                    <td><a href="agregarAlaColaa?Carnet=${datos.getCarnet()}">Agregar</a></td>
-                                    <td><a href="EliminaUsuario?codigo=${datos.getCodigo()}">Eliminar</a></td>
-
+                                    <td>
+                                        <input
+                                            class="input-consulta"
+                                            type="submit"
+                                            value="Agregar a la cola"
+                                            />
+                                    </td>
                                 </tr>
-                            </c:forEach>
+                            </form>
+                        </c:forEach>
                         </tbody>
                     </table>
                 </div>
                 <form action="ConsultaEstudiantesCola" method="post">
-                    <input type="submit" name="consulta" value="Consultar">
+                     <div class="btn-container btn-consulta-tabla">
+                            <button name="consulta" type="submit">Consultar</button>
+                        </div>
                 </form>
-
             </div>
         </section>
 

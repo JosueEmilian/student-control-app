@@ -24,6 +24,10 @@
         <servlet-name>RegistrarAlumno</servlet-name>
         <servlet-class>servlet.RegistrarAlumno</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddColaEstudiantes</servlet-name>
+        <servlet-class>servlet.AddColaEstudiantes</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
         <url-pattern>/iniciar</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>RegistrarAlumno</servlet-name>
         <url-pattern>/RegistrarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddColaEstudiantes</servlet-name>
+        <url-pattern>/AddColaEstudiantes</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
